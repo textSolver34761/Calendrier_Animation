@@ -83,18 +83,18 @@
                 </div>
 
                 <div class="links">
-                     <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::fullUrl()) }}"
-                            target="_blank">
-                            Share on Facebook
-                        </a>
-                        <a href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}"
-                            target="_blank">
-                            Share on Twitter
-                        </a>
-                        <a href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}"
-                            target="_blank">
-                            Share on Google
-                        </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::fullUrl()) }}"
+                        target="_blank">
+                        Share on Facebook
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}"
+                        target="_blank">
+                        Share on Twitter
+                    </a>
+                    <a href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}"
+                        target="_blank">
+                        Share on Google
+                    </a>
                 </div>
             </div>
         </div>
