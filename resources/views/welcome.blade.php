@@ -76,6 +76,7 @@
                     @endauth
                 </div>
             @endif
+            <a href="{{ route('deployement') }}">Deploy my calendar</a>
 
             <div class="content">
                 <div class="title m-b-md">
