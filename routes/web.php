@@ -11,6 +11,8 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +20,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('mycalender', function () {
+	return view('mycalender');
+})->name('mycalender');
+
+Route::resource('animation', 'AnimationController');
+
+Route::get('events', 'EventController@index');
+
