@@ -80,6 +80,8 @@
             <div class="content">
                 <div class="title m-b-md">
                     Calendrier
+                    <br>
+                    <a href="{{ route('mycalender') }}">voir le calendrier</a>
                 </div>
 
                 <!--<div class="links">

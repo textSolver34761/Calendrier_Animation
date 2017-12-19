@@ -43,7 +43,11 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '8889'),
+<<<<<<< HEAD
             'database' => env('DB_DATABASE', 'calendrier'),
+=======
+            'database' => env('DB_DATABASE', 'Calendrier_Animation'),
+>>>>>>> 1b285f915f51a0c0c812693ca3329aa1fdec2e80
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),

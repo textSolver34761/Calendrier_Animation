@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use App\User;
 use App\Animation;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+=======
+>>>>>>> 1b285f915f51a0c0c812693ca3329aa1fdec2e80
 
 class AnimationController extends Controller
 {
@@ -17,7 +20,11 @@ class AnimationController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
         $anim = Animation::find($id);
+=======
+        //
+>>>>>>> 1b285f915f51a0c0c812693ca3329aa1fdec2e80
     }
 
     /**
