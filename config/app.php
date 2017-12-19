@@ -167,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Bestmomo\Installer\InstallerServiceProvider::class,
 
         /*
          * Application Service Providers...
