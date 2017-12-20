@@ -10,6 +10,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
+
         <!-- Styles -->
         <style>
             html, body {
@@ -81,7 +87,7 @@
                 <div class="title m-b-md">
                     Calendrier
                     <br>
-                    <a href="{{ route('mycalender') }}">voir le calendrier</a>
+                    <a href="{{ route('events') }}">voir le calendrier</a>
                 </div>
 
                 <!--<div class="links">
