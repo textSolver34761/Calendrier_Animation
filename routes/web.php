@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/', function()
+Route::get('/share', function()
 {
-	return Share::load('http://www.moncalendrieranime.fr', 'Link description')->services('facebook', 'gplus', 'twitter','evernote','digg','delicious','linkedin','pinterest','reddit','scoopit','springpad','tumblr','twitter','viadeo','vk');
+	return Share::load('http://www.benjaminpradon.tech', 'Mon Calendrier')->twitter();
 });
