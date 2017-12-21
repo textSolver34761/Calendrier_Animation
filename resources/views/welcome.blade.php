@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <style>
+
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -62,6 +63,15 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .facebook {
+                
+                text-decoration-color: blue;
+                padding: 13px 25px;
+                text-align: center; 
+                
+                
+            }
         </style>
     </head>
     <body>
@@ -82,7 +92,7 @@
                     Calendrier
                 </div>
 
-                <div class="links">
+                <div class="links facebook">
                     <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::fullUrl()) }}"
                         target="_blank">
                         Share on Facebook
@@ -99,5 +109,29 @@
             </div>
         </div>
 
+        <script type="text/javascript">
+            
+            var popupMeta = {
+    width: 400,
+    height: 400
+}
+$(document).on('click', '.social-share', function(event){
+    event.preventDefault();
+
+    var vPosition = Math.floor(($(window).width() - popupMeta.width) / 2),
+        hPosition = Math.floor(($(window).height() - popupMeta.height) / 2);
+
+    var url = $(this).attr('href');
+    var popup = window.open(url, 'Social Share',
+        'width='+popupMeta.width+',height='+popupMeta.height+
+        ',left='+vpPsition+',top='+hPosition+
+        ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
+
+    if (popup) {
+        popup.focus();
+        return false;
+    }
+});
+        </script>
     </body>
 </html>
