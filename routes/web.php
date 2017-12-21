@@ -19,7 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/share', function()
-{
-	return Share::load('http://www.benjaminpradon.tech', 'Mon Calendrier')->twitter();
-});
+//Route::get('/share', function()
+//{
+//	return Share::load('http://www.benjaminpradon.tech', 'Mon Calendrier')->twitter();
+//});
+
+//Route::get('/', function()
+//{
+//	return Share::load('http://www.benjaminpradon.tech', 'My example')->facebook();
+//});
