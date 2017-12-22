@@ -9,6 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
@@ -18,6 +20,7 @@
 
         <!-- Styles -->
         <style>
+
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -68,6 +71,15 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .facebook {
+                
+                text-decoration-color: blue;
+                padding: 13px 25px;
+                text-align: center; 
+                
+                
+            }
         </style>
     </head>
     <body>
@@ -97,7 +109,46 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>-->
+                <div class="links facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::fullUrl()) }}"
+                        target="_blank">
+                        Share on Facebook
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url={{ urlencode(Request::fullUrl()) }}"
+                        target="_blank">
+                        Share on Twitter
+                    </a>
+                    <a href="https://plus.google.com/share?url={{ urlencode(Request::fullUrl()) }}"
+                        target="_blank">
+                        Share on Google
+                    </a>
+                </div>
             </div>
         </div>
+
+        <script type="text/javascript">
+            
+            var popupMeta = {
+    width: 400,
+    height: 400
+}
+$(document).on('click', '.social-share', function(event){
+    event.preventDefault();
+
+    var vPosition = Math.floor(($(window).width() - popupMeta.width) / 2),
+        hPosition = Math.floor(($(window).height() - popupMeta.height) / 2);
+
+    var url = $(this).attr('href');
+    var popup = window.open(url, 'Social Share',
+        'width='+popupMeta.width+',height='+popupMeta.height+
+        ',left='+vpPsition+',top='+hPosition+
+        ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
+
+    if (popup) {
+        popup.focus();
+        return false;
+    }
+});
+        </script>
     </body>
 </html>
