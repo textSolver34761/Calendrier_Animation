@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Animation extends Model
 {
-    //protected $table = 'animations';
+    protected $table = 'animations';
 }

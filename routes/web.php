@@ -21,6 +21,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('animation', 'AnimationController');
-
-Route::get('events', 'EventController@index')->name('events');
+Route::resource('events', 'EventController');

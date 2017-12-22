@@ -87,7 +87,7 @@
                 <div class="title m-b-md">
                     Calendrier
                     <br>
-                    <a href="{{ route('events') }}">voir le calendrier</a>
+                    <a href="{{ route('events.index') }}">voir le calendrier</a>
                 </div>
 
                 <!--<div class="links">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Animation;
+use Calendar;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,7 +18,8 @@ class AnimationController extends Controller
      */
     public function index()
     {
-        $anim = Animation::all();
+        $anims = Animation::all();
+        return view('mycalender', ['anims' => $anims]);
     }
 
     /**
@@ -27,7 +29,7 @@ class AnimationController extends Controller
      */
     public function create()
     {
-        //
+        return view('mycalender.create');
     }
 
     /**
@@ -38,7 +40,8 @@ class AnimationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Animation::create($request->all());
+        return redirect()->route('animation.index');
     }
 
     /**
