@@ -10,5 +10,5 @@ npm-debug.log
 yarn-error.log
 /vendor
 .env
-/config/database.php
+config/database.php
 composer.phar
